@@ -1,0 +1,15 @@
+不可再For循环体内修改变量，防止For 循环失去控制 如下列
+#include<stdio.h>
+int main()
+{
+     int a=0;
+     for(a=0; a<=10; a++)
+     {
+         if(a= 5)
+         {
+             printf("hehe");
+         }
+         printf("ha ha");
+     }
+    return 0;
+}
