@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+int main()
+{
+    int a= 0;//初始
+    while(a<= 10)//判断
+    {
+        if(5== a)
+        {
+            continue;
+        }
+        printf("%d", a);
+        a++;//调整
+    }
+    return 0;
+}
