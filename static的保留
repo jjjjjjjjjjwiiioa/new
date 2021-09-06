@@ -1,0 +1,22 @@
+//staic 静态   保留数值   如 b 的值 会被保留  其他值 在循环中  重置
+#include<stdio.h>
+int sum(int a)
+{
+    int c=0 ;
+    static int b =3;
+    c+=1;
+    b+=2;
+    return (a+ b+ c);
+}
+int main()
+{
+    int i = 0;
+    int a = 3;
+    for(i= 0;i<= 5;i++)
+    {
+        printf(" %d", sum(a));
+    }
+
+
+    return 0;
+}
