@@ -1,3 +1,4 @@
+代码意思:2-sqrt(i)若有数能被整除就不是素数，没有就是素数
 #include<stdio.h>
 #include<math.h>
 int main()
@@ -9,8 +10,8 @@ int main()
         //试除法
         //产生 2- i-1
         int j=0;
-        for(j=2;j< i;j++)优化版   for(j=2;j<sqrt(i);j++)
-        {
+        for(j=2;j< i;j++)优化版    for(j=2;j<=sqrt(i);j++)          //若不是素数  i=a*b   a/b 至少有一个小于开平方数   若没有 就是素数
+         {
             if(i%j ==0)
         {
             break;
