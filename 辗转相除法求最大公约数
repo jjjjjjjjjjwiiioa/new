@@ -12,7 +12,6 @@ int main()
     int n= 10;
     int i= 0;
     scanf("%d%d",&m, &n);
-
     while(m%n)
     {
         i=m%n;
@@ -20,6 +19,5 @@ int main()
         n= i;
     }
     printf("%d", n);
-
     return 0;
 }
