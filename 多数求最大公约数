@@ -17,7 +17,7 @@
 #include<stdio.h>
 int main()
 {
-    int n = 0;
+    long long int n;
     while(scanf("%d", &n) != EOF)
     {
         if(2<=n && n<= 1000)
@@ -37,7 +37,7 @@ int main()
                 a = b;
                 b = c;
             }
-            while(a % b ！= 0)
+            while(a % b )
                 {
                     m = a % b;
                     a = b;
