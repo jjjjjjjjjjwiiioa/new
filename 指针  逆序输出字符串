@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<string.h>
+void reverse(char* str)
+{
+    int len = strlen(str);
+    char* left = str;
+    char* right = str+len-1;
+    while(left < right)
+    {
+        char tmp = *left;
+        *left = *right;
+        *right = tmp;
+        left++;
+        right--;
+    }
+}
+int main()
+{
+    char a[120] = {0};
+    gets(a);
+    reverse(a);
+    puts(a);
+    return 0;
+}
